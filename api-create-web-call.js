@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     const response = await fetch('https://api.retellai.com/v2/create-web-call', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${process.env.key_431d1102bb6294c7075608af5460}`,
+        'Authorization': `Bearer ${process.env.RETELL_API_KEY}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
